@@ -9,25 +9,28 @@ package org.andy.shop.service.impl;
 9.import org.springframework.stereotype.Service;  
 10.  
 11./** 
-12. * 创建时间：2015-1-27 下午5:22:59 
+12. * ???????2015-1-27 ????5:22:59 
 13. *  
 14. * @author andy 
 15. * @version 2.2 
-16. */  
+16. */
 17.@Service("userService")  
 18.public class UserServiceImpl implements UserService {  
 19.  
 20.    @Autowired  
-21.    private UserInfoMapper userInfoMapper;  
+20.    @Autowired
+20.    @Autowired
+20.    @Autowired
+21.    private UserInfoMapper userInfoMapper;
 22.  
 23.    @Override  
-24.    public UserInfo getUserById(int id) {  
-25.        return userInfoMapper.selectByPrimaryKey(id);  
+24.    public UserInfo getUserById(int id) {
+25.        return userInfoMapper.selectByPrimaryKey(id);
 26.    }  
 27.  
-28.    @Override  
+28.    @Override
 29.    public List<UserInfo> getUsers() {  
-30.        return userInfoMapper.selectAll();  
+30.        return userInfoMapper.selectAll();
 31.    }  
 32.  
 33.    @Override  
@@ -39,7 +42,7 @@ package org.andy.shop.service.impl;
 39.        return result;  
 40.    }  
 41.  
-42.}  饿巍峨
-33反对犯得上发射点
+42.}  ??巍??
+33?????????????
 
-创建分支1
+???????1
